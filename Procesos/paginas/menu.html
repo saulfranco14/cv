@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Sistema de Credenciales">
+		<meta name="author" content="Ing. Saul Mauricio Franco Renteria">
+		<link href="../estilos/bootstrap.min.css" rel="stylesheet">
+		<link href="../estilos/carrusel.css" rel="stylesheet">
+		<link href="../estilos/carrusel_imagenes.css" rel="stylesheet">
+		<link href="../imagenes/Image-2.png" rel="shortcut icon" type="image-2/png" />
+		<title>Lic. Mario Colin Sanchez</title>
+	</head>
+
+	<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	 <div class="container">
+		<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarMenuColapsable" aria-expanded="flase" aria-controls="navbar">
+					<span class="sr-only">Menu Colapsable</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			<a class="navbar-brand" href="#">Lic. Mario Colin Sanchez</a>
+		</div>
+		<div id="navbarMenuColapsable" class="navbar-collapse collapse">
+		<ul class="nav navbar-nav">
+			<li><a href="alumno.html">Alumnos</a></li>
+			<li><a href="grupo.html">Grupos</a></li>
+			<li><a href="domicilio.html">Domicilio</a></li>
+			<li><a href="alergia.html">alumno</a></li>
+			<li><a href="grado.html">Grado</a></li>
+			<li><a href="administrador.html">Administradores</a></li>
+			<!--<li><a href="profesor.html">Profesores</a></li>-->
+			
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li><a href="javascript: cerrarSesion();">Cerrar Sesión</a></li>
+		</ul>
+		</div>
+	 </div>
+	</nav>
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="item active">
+				<div class="llenarImagen imagenFondoAlumno"></div>
+				<div class="carousel-caption">
+				<h2><br />Catalogo de Alumnos</h2>
+				<p>Administre su Catalogo de  Alumnos</p>
+				<a href="alumno.html" type="button" class="btn btn-success">Alumnos &raquo;</a>
+				</div>
+			</div>	
+			<div class="item">
+				<div class="llenarImagen imagenFondoGrupo"></div>
+				<div class="carousel-caption">
+				<h2><br />Catalogo de Grupos</h2>
+				<p>Administre su Catalogo de Grupos</p>
+				<a href="alumno.html" type="button" class="btn btn-success">Grupos &raquo;</a>
+			</div>
+		</div>
+		<div class="item">
+			<div class="llenarImagen imagenFondoDomicilio"></div>
+			<div class="carousel-caption">
+				<h2><br />Catalogo de Domicilio</h2>
+				<p>Administre su Catalogo de Domicilio</p>
+				<a href="domicilio.html" type="button" class="btn btn-success">Domicilio &raquo;</a>
+			</div>
+		</div>
+		<div class="item">
+			<div class="llenarImagen imagenFondoAlergia"></div>
+			<div class="carousel-caption">
+				<h2><br />Catalogo de alumno</h2>
+				<p>Administre su Catalogo de alumno</p>
+				<a href="alergia.html" type="button" class="btn btn-success">alumno &raquo;</a>
+			</div>
+		</div>
+		<div class="item">
+			<div class="llenarImagen imagenFondoGrado"></div>
+			<div class="carousel-caption">
+				<h2><br />Catalogo de Grados</h2>
+				<p>Administre su Catalogo de Grados</p>
+				<a href="grado.html" type="button" class="btn btn-success">Grado &raquo;</a>
+			</div>
+		</div>
+		<div class="item">
+			<div class="llenarImagen imagenFondoAdministrador"></div>
+			<div class="carousel-caption">
+				<h2><br />Catalogo de Administradores</h2>
+				<p>Administre su Catalogo de Administradores</p>
+				<a href="administrador.html" type="button" class="btn btn-success">Administrador &raquo;</a>
+			</div>
+		</div>
+		<!--
+		<div class="item">
+			<div class="llenarImagen imagenFondoProfesor"></div>
+			<div class="carousel-caption">
+				<h2><br />Catalogo de Profesor</h2>
+				<p>Administre su Catalogo de Profesores</p>
+				<a href="alergia.html" type="button" class="btn btn-success">Profesores &raquo;</a>
+			</div>
+		</div>-->
+	</div>
+	<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previo</span>
+	</a>
+	<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Siguiente</span>
+	</a>
+    </div>
+    <div id="divModalAvisos" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    	<div class="modal-dialog" role="document">
+    		<div class="modal-content">
+    			<div class="modal-header">
+    				<button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">&times;</button>
+    				<h4 class="modal-title">
+    					<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+    					&nbsp;Aviso    
+    				</h4>
+    			</div>
+    			<div id="divAvisos" class="modal-body">
+    				<p>Este mensaje sera remplazado por otro....</p>
+    			</div>
+    			<div class="modal-footer">
+    				<button type="button" class="btn btn-warning" data-dismiss="modal">Cerrar</button>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+    
+    <script src="../js/libs/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script src="../js/libs/bootstrap.min.js" type="text/javascript"></script>
+    <script src="../js/sanitizador.js" type="text/javascript"></script>
+    <script src="../js/generador_ids.js" type="text/javascript"></script>
+    <script src="../js/errores.js" type="text/javascript"></script>
+    <script src="../js/salir.js" type="text/javascript"></script>
+	</body>
+</html>
